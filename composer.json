@@ -1,0 +1,10 @@
+{
+  "name": "worldfirst/world-account-tribe-coding-kata",
+  "description": "WorldFirst World Account Tribe Coding Katas",
+  "license": "MIT",
+  "require-dev": {
+    "behat/behat": "^3.5",
+    "phpspec/phpspec": "^5.1",
+    "phpunit/phpunit": "^7.4"
+  }
+}
