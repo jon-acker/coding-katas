@@ -1,3 +1,10 @@
----
+version: '2.1'
 
-...
+services:
+  php:
+    labels:
+      project: kata
+    build:
+      context: ./docker/php/
+    volumes:
+      - ./:/var/www/html
