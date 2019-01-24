@@ -1,5 +1,19 @@
 # WorldFirst Coding Katas
 
+#Running
+`composer install`
+
+`bin/phpspec describe MyClass`
+
+`bin/phpspec run`
+
+## In Dockerized enivonrment
+`docker-compose exex php composer install`
+
+`docker-compose exex php bin/phpspec describe MyClass`
+
+`docker-compose exex php bin/phpspec run`
+
 ## Katas
 
 ### TDD (at class/unit level)

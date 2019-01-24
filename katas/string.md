@@ -1,5 +1,7 @@
 ## String Caluclator Kata
 
+Use PhpSpect to describe the class `StringCalculator`. Give the class a method which:
+
  - It returns 0 for empty string
  - It returns 0 for the string '0'
  - It returns the bare number for a single number 
