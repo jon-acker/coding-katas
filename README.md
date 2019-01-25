@@ -8,11 +8,11 @@
 `bin/phpspec run`
 
 ## In Dockerized enivonrment
-`docker-compose exex php composer install`
+`docker-compose exec php composer install`
 
-`docker-compose exex php bin/phpspec describe MyClass`
+`docker-compose exec php bin/phpspec describe MyClass`
 
-`docker-compose exex php bin/phpspec run`
+`docker-compose exec php bin/phpspec run`
 
 ## Katas
 
