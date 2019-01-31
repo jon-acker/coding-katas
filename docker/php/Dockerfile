@@ -4,6 +4,7 @@ USER root
 RUN mkdir -p /run/php && chown www-data:www-data /run/php
 RUN mkdir -p /tmp/composer/.cache/repo/ && chown -R www-data:www-data /tmp/composer/.cache/repo/
 RUN mkdir -p /tmp/composer/.cache/files/ && chown -R www-data:www-data /tmp/composer/.cache/files/
+RUN mkdir -p /var/www/html/vendor/ && chown -R www-data:www-data /var/www/html/vendor/
 
 USER www-data
 

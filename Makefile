@@ -6,3 +6,7 @@ project-clean: ## clean all project specific containers and images (add "all" to
 	yes | docker network prune 2>/dev/null || true
 	yes | docker volume prune 2>/dev/null || true
 	yes | docker system prune 2>/dev/null || true
+
+
+make test-js:
+	docker-compose exec node node_modules/.bin/mocha js/spec/

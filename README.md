@@ -1,18 +1,37 @@
 # WorldFirst Coding Katas
 
-#Running
+
+# Running
+## PHP
 `composer install`
 
 `bin/phpspec describe MyClass`
 
 `bin/phpspec run`
 
+## Node
+`node_modules/.bin/mocha js/spec/TennisGameSpec.js`
+
+or just
+
+`node_modules/.bin/mocha js/spec/`
+
 ## In Dockerized enivonrment
-`docker-compose exec php composer install`
+There are two containers provided: php & node
 
-`docker-compose exec php bin/phpspec describe MyClass`
+`docker-comopose up -d`
 
-`docker-compose exec php bin/phpspec run`
+### PHP
+
+`docker-compose exec php {your-cmd}`
+
+### Node
+`docker-compose exec node {your-command}`
+
+
+or 
+`make test-js` will run all the JS tests
+
 
 ## Katas
 

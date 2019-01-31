@@ -8,3 +8,15 @@ services:
       context: ./docker/php/
     volumes:
       - ./:/var/www/html
+  node:
+    labels:
+      project: kata
+    build:
+      context: ./docker/node/
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node/app
+    expose:
+      - 8082
