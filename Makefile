@@ -9,4 +9,5 @@ project-clean: ## clean all project specific containers and images (add "all" to
 
 
 make test-js:
+	docker-compose up -d
 	docker-compose exec node node_modules/.bin/jest js/test/
