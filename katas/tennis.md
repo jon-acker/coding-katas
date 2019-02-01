@@ -15,15 +15,21 @@
 Create a `Game` class with a method that allows each player to `score` a point, and another method that returns a string representing the current score: 
 
 Examples:
- - No players have scored
+ - No players have scored:
  
  `$game->displayScore()`: `Love all`
- 
- - `$game->scorePoint('player1')`
+
+- One player has scored:
+
+ `$game->scorePoint('player1')`
  
  `$game->displayScore()`: `Fifteen - Love`
  
- - `$game->scorePoint('player1')`
- - `$game->scorePoint('player2')`
+- Both players have scored:
+
+ `$game->scorePoint('player1')`
+ 
+ `$game->scorePoint('player2')`
     
  `$game->displayScore()`: `Fifteen all`
+

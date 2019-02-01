@@ -10,11 +10,11 @@
 `bin/phpspec run`
 
 ## Node
-`node_modules/.bin/mocha js/spec/TennisGameSpec.js`
+`node_modules/.bin/jest js/spec/TennisGame.test.js`
 
 or just
 
-`node_modules/.bin/mocha js/spec/`
+`node_modules/.bin/mocha js/test/`
 
 ## In Dockerized enivonrment
 There are two containers provided: php & node
