@@ -2,7 +2,7 @@ const TennisGame = require('../src/TennisGame');
 
 let game;
 
-beforeAll(() => {
+beforeEach(() => {
     game = new TennisGame();
 });
 
