@@ -15,9 +15,17 @@
 Create a `Game` class with a method that allows each player to `score` a point, and another method that returns a string representing the current score: 
 
 Use *Behat* or *Cucumber-js* to execute scenarios.
-`bin/behat` or
-`node_modules\.bin\cucumber-js`
-``
+
+`bin/behat` 
+
+(with docker: `docker-compose exec php bin/behat`)
+
+or
+
+`node_modules/.bin/cucumber-js`
+
+(with docker: `docker-compose exec node node_modules/.bin/cucumber-js`)
+
 Examples:
 
 ```gherkin
