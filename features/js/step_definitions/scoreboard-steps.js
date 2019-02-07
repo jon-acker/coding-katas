@@ -1,19 +1,27 @@
 const cucumber = require('cucumber');
+const Player = require('../../../js/src/Player');
 
 const Given = cucumber.Given;
 const When = cucumber.When;
 const Then = cucumber.Then;
 
+cucumber.defineParameterType({
+    regexp: /"(.*)"/,
+    transformer: name => new Player(name),
+    name: 'player'
+});
 
-Given('Neither player have scored a point', function () {
+Given('neither player have scored a point', function () {
+
+});
+
+Given('the game is started', function () {
     // Write code here that turns the phrase above into concrete actions
     return 'pending';
 });
 
-
-When('{string} scores a point', function (string) {
+When('{player} scores a point', function (player) {
     // Write code here that turns the phrase above into concrete actions
-    return 'pending';
 });
 
 Then('the scoreboard should display {string}', function (string) {
