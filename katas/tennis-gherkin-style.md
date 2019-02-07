@@ -12,7 +12,9 @@
 4. If at least three points have been scored by each side and a player has one more point than his opponent, the score of the game is “Advantage” for the player in the lead.
 
 
-Create a `Game` class with a method that allows each player to `score` a point, and another method that returns a string representing the current score: 
+Create an application with more than one class. The application allows the user to score a point in a game, and produces an updated display of the score in words.
+
+Persist the score in filesystem (or something similarly easy), and set it up for each `Given` step.
 
 Use *Behat* or *Cucumber-js* to execute scenarios.
 
@@ -32,13 +34,17 @@ Examples:
 Feature: Displaying correct scoreboard in a tennis game
 
     Scenario: Displaying Love All when neither players have scored a point
-        Given  Neither player have scored a point
+        Given neither player have scored a point
         When the game is started
         Then the scoreboard should display "Love All" 
         
-    Scenario: Showing Fifteen - Love when one players has scored a point
-        Given  Neither player have scored a point
+    Scenario: Showing Fifteen - Love when one players scores a point
+        Given neither player have scored a point
         When "Player One" scores a point
         Then the scoreboard should display "Fifteen - Love" 
 
+    Scenario: Showing Fifteen - All when both players score a point
+        Given "Player One" has already scored one point
+        When "Player Two" scores a point
+        Then the scoreboard should display "Fifteen - All" 
 ```
