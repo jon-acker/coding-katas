@@ -1,5 +1,6 @@
 const cucumber = require('cucumber');
 const Player = require('../../../js/src/Player');
+const Game = require('../../../js/src/TennisGame');
 
 const Given = cucumber.Given;
 const When = cucumber.When;
@@ -15,13 +16,14 @@ Given('neither player have scored a point', function () {
 
 });
 
+let game;
+
 Given('the game is started', function () {
-    // Write code here that turns the phrase above into concrete actions
-    return 'pending';
+    game = new Game();
 });
 
 When('{player} scores a point', function (player) {
-    // Write code here that turns the phrase above into concrete actions
+    game.scorePointFor(player);
 });
 
 Then('the scoreboard should display {string}', function (string) {
