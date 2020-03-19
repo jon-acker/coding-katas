@@ -1,4 +1,4 @@
-# WorldFirst Coding Katas
+# TDD and BDD Coding Katas
 
 
 # Running
