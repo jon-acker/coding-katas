@@ -1,4 +1,4 @@
-FROM nexus.int.worldfirst.com:16443/peng/php7.1-ubuntu:5
+FROM php7.1-ubuntu:5
 USER root
 
 RUN mkdir -p /run/php && chown www-data:www-data /run/php
