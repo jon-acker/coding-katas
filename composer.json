@@ -1,12 +1,12 @@
 {
-  "name": "worldfirst/world-account-tribe-coding-kata",
-  "description": "WorldFirst World Account Tribe Coding Katas",
+  "name": "jonacker/coding-katas",
+  "description": "Coding Katas",
   "license": "MIT",
   "require-dev": {
-    "behat/behat": "^3.5",
-    "phpspec/phpspec": "^5.1",
+    "behat/behat": "^3.0",
+    "phpspec/phpspec": "^5.0",
     "phpunit/phpunit": "^7.4",
-    "dmore/behat-chrome-extension": "^1.2",
+    "dmore/behat-chrome-extension": "^1.0",
     "everzet/persisted-objects": "^1.0"
   },
   "config": {

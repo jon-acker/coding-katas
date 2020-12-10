@@ -1,9 +1,9 @@
 ## String Caluclator Kata
 
-Use PhpSpect to describe the class `StringCalculator`. Give the class a method called `calc`, which does the following:
+Use PhpSpec to describe the class `StringCalculator`. Give the class a method called `calc`, which does the following:
 
  - It returns 0 for empty string
- - It returns the bare number for a single number 
+ - It returns the bare number for a single number
    (e.g. '2' -> 2)
  - It returns the sum of space-separated numbers
    (e.g. '1 2' -> 3)
