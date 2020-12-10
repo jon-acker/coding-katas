@@ -1,12 +1,15 @@
 {
-  "name": "jonacker/coding-katas",
+  "name": "jon-acker/coding-katas",
   "description": "Coding Katas",
   "license": "MIT",
+  "require": {
+    "php": ">=7.1.0"
+  },
   "require-dev": {
     "behat/behat": "^3.0",
     "phpspec/phpspec": "^5.0",
     "phpunit/phpunit": "^7.4",
-    "dmore/behat-chrome-extension": "^1.0",
+    "dmore/behat-chrome-extension": "^1.3",
     "everzet/persisted-objects": "^1.0"
   },
   "config": {
